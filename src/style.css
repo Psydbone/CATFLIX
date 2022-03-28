@@ -1,34 +1,34 @@
-h1,
-p {
+html {
+  background-color: black;
   font-family: sans-serif;
+  color: white;
 }
 
-.container{
+.container {
   background-color: black;
   color: white;
 }
 
-.description{
-  color:lightgray;
+.description {
+  color: lightgray;
 }
 
-.notes{
+.notes {
   color: gray;
   font-size: small;
   font-style: italic;
 }
 
-.texts{
- width: 40%;
- display: inline-block;
+.texts {
+  width: 40%;
+  display: inline-block;
 }
 
-.images{
- width: 60%;
- display: inline-block;
+.images {
+  width: 60%;
+  display: inline-block;
 }
 
-img{
+img {
   width: 100%;
 }
-
