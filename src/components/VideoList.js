@@ -1,10 +1,10 @@
 import React from 'react';
 import '../style.css';
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
-      <h4>Lista dei vod</h4>
+      <h4>{props.title}</h4>
       <div className="scroll">
         <div className="thumbnail">
           <img src="http://placekitten.com/g/400/200" />
