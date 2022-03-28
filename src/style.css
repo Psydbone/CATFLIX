@@ -32,3 +32,18 @@ html {
 img {
   width: 100%;
 }
+
+.scroll {
+  overflow-x: scroll;
+}
+
+.thumbnail {
+  width: 6000px;
+}
+
+.thumbnail img {
+  width: 200px;
+  height: 100px;
+  display: inline;
+  margin: 0 12px 0 0;
+}
