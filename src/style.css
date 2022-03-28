@@ -47,3 +47,25 @@ img {
   display: inline;
   margin: 0 12px 0 0;
 }
+
+.button{
+  background-color: red;
+  color:white;
+  font-style: bold;
+  border: none;
+  width: 170px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.widget{
+  background-color: rgb(73, 72, 72);
+  margin: auto;
+  width: 180px;
+  padding: 10px;
+  margin-top: 50px;
+
+}
+.loginNotes{
+  font-size: small;
+}
