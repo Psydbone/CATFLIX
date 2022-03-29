@@ -8,10 +8,15 @@ import '../style.css';
 export default function Player() {
   return (
     <div className="player-container">
-      <h1 className="player"> Player </h1>
-      <PlayBtn className="playBtn" />
-      <BackIcon className="backIcon" />
-      <VolumeIcon className="volumeIcon" />
+      <div className="top">
+        <BackIcon className="backIcon" />
+        <h1 className="player"> Player </h1>
+        <VolumeIcon className="volumeIcon" />
+      </div>
+      <div className="bot">
+        <PlayBtn className="playBtn" />
+       
+      </div>
     </div>
   );
 }

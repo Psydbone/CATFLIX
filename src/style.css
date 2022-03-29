@@ -48,9 +48,9 @@ img {
   margin: 0 12px 0 0;
 }
 
-.button{
+.button {
   background-color: red;
-  color:white;
+  color: white;
   font-style: bold;
   border: none;
   width: 170px;
@@ -58,19 +58,18 @@ img {
   border-radius: 5px;
 }
 
-.widget{
+.widget {
   background-color: rgb(73, 72, 72);
   margin: auto;
   width: 180px;
   padding: 10px;
   margin-top: 50px;
-
 }
-.loginNotes{
+.loginNotes {
   font-size: small;
 }
 
-.thumbnail > img:hover{
+.thumbnail > img:hover {
   border: red solid;
 }
 svg {
@@ -84,23 +83,19 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  justify-self: flex-start;
   justify-content: space-between;
+  align-content: space-around;
 }
 
-.player{
-  order:1;
-  flex-wrap: wrap;
-  
+.bot{
+  display: flex;
+  justify-self: flex-start;
 }
 
-.backIcon{
-  order:2;
-}
-
-.playBtn{
-  order:-1;
-}
-
-.volumeBtn{
- order:3;
-}
