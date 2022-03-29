@@ -9,7 +9,7 @@ export default function Home(props) {
     <>
       <button onClick={() => props.logoutCallback() }>Logout</button> <TitleHeader titles={props.data.titleData} />
       {props.data.lists.map((elementocorrente) => {
-        return <VideoList title={elementocorrente} />;
+        return <VideoList title={elementocorrente} videoClicked={props.videoClicked}/>;
       })}
     </>
   );

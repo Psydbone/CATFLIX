@@ -69,3 +69,38 @@ img {
 .loginNotes{
   font-size: small;
 }
+
+.thumbnail > img:hover{
+  border: red solid;
+}
+svg {
+  width: 30px;
+}
+
+.player-container {
+  width: 600px;
+  height: 420px;
+  background-image: url('https://placekitten.com/g/800/640');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player{
+  order:1;
+  flex-wrap: wrap;
+  
+}
+
+.backIcon{
+  order:2;
+}
+
+.playBtn{
+  order:-1;
+}
+
+.volumeBtn{
+ order:3;
+}

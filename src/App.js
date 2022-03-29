@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './page/Home';
 import Login from './page/Login';
-//import Player from './page/Player'
+import Player from './page/Player'
 import './style.css';
 
 export default class App extends React.Component {
@@ -9,7 +9,8 @@ export default class App extends React.Component {
     super(props);
     const isLogged = localStorage.getItem('isLogged');
     this.state = {
-      isLogged,
+      isLogged:true,
+      isPlayer:false,
     };
   }
 
@@ -34,9 +35,18 @@ export default class App extends React.Component {
    this.setState({isLogged:false});
   };
 
+  videoClicked = (id) => {
+    console.log('videoClick AppComponent ',+id);
+    this.setState({isPlayer:true});
+  }
+
   render() {
     return this.state.isLogged ? (
-      <Home data={this.data} logoutCallback={this.logout}/>
+      this.state.isPlayer ? (
+      <Player/>
+    ) : (
+      <Home data={this.data} logoutCallback={this.logout} videoClicked={this.videoClicked}/>
+    )
     ) : (
       <Login loginCallback={this.login} />
     );
