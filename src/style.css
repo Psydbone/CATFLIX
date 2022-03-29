@@ -85,13 +85,12 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px;
 }
 
 .top {
   display: flex;
-  justify-self: flex-start;
   justify-content: space-between;
-  align-content: space-around;
 }
 
 .bot{
